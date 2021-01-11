@@ -14,7 +14,7 @@
     
     
       
-        <title>OpenCV Display - Chrysalis</title>
+        <title>REST API - Chrysalis</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#executing-opencv-display-script" class="md-skip">
+        <a href="#chrysalis-clouds-rest-apis" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              OpenCV Display
+              REST API
             
           </span>
         </div>
@@ -455,12 +455,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6" >
     <label class="md-nav__link" for="nav-3-6">
       Examples
       <span class="md-nav__icon md-icon"></span>
@@ -479,7 +477,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../prerequisites/" class="md-nav__link">
+    <a href="../../examples/prerequisites/" class="md-nav__link">
       Prerequisites
     </a>
   </li>
@@ -491,7 +489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic-usage/" class="md-nav__link">
+    <a href="../../examples/basic-usage/" class="md-nav__link">
       Basic Usage
     </a>
   </li>
@@ -501,20 +499,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../examples/display/" class="md-nav__link">
       OpenCV Display
     </a>
-    
   </li>
 
         
@@ -524,7 +513,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../storage-onoff/" class="md-nav__link">
+    <a href="../../examples/storage-onoff/" class="md-nav__link">
       Storage
     </a>
   </li>
@@ -539,10 +528,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7" >
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7" checked>
     <label class="md-nav__link" for="nav-3-7">
       API References
       <span class="md-nav__icon md-icon"></span>
@@ -559,11 +550,63 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../apis/rest_api_curl/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        REST API
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       REST API
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connect-a-new-rtsp-camera" class="md-nav__link">
+    Connect a new RTSP camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-rtsp-camera" class="md-nav__link">
+    Delete a RTSP camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-all-rtsp-connected-cameras" class="md-nav__link">
+    List all RTSP connected cameras
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -594,6 +637,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#connect-a-new-rtsp-camera" class="md-nav__link">
+    Connect a new RTSP camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#delete-a-rtsp-camera" class="md-nav__link">
+    Delete a RTSP camera
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-all-rtsp-connected-cameras" class="md-nav__link">
+    List all RTSP connected cameras
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -605,12 +677,22 @@
               
                 
                 
-                <h1 id="executing-opencv-display-script">Executing OpenCV display script<a class="headerlink" href="#executing-opencv-display-script" title="Permanent link">&para;</a></h1>
-<p>Display video at original frame rate for <code>test</code> camera:</p>
-<div class="highlight"><pre><span></span><code>python opencv_display.py --device test
+                <h1 id="chrysalis-clouds-rest-apis">Chrysalis Clouds' REST APIs<a class="headerlink" href="#chrysalis-clouds-rest-apis" title="Permanent link">&para;</a></h1>
+<p>The Chrysalis Clouds' video-edge-ai-proxy server exposes RESTful APIs for stream management. With these APIs you can start, stop, delete, and list the rtmp_to_rtsp containers.</p>
+<h2 id="connect-a-new-rtsp-camera">Connect a new RTSP camera<a class="headerlink" href="#connect-a-new-rtsp-camera" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">curl</label><div class="tabbed-content"></div>
+</div>
+<div class="highlight"><pre><span></span><code>curl -d &#39;{&quot;name&quot;:&quot;demo&quot;,&quot;rtsp_endpoint&quot;:&quot;rtsp://igor:igor123456@10.0.1.26/axis-media/media.amp&quot;}&#39; -H &quot;Content-Type:application/json&quot; http://127.0.0.1:8909/api/v1/process
 </code></pre></div>
-<p>Display only Keyframes for <code>test</code> camera:</p>
-<div class="highlight"><pre><span></span><code>python opencv_display.py --device test --keyframe
+<h2 id="delete-a-rtsp-camera">Delete a RTSP camera<a class="headerlink" href="#delete-a-rtsp-camera" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">curl</label><div class="tabbed-content"></div>
+</div>
+<div class="highlight"><pre><span></span><code>curl -X DELETE http://127.0.0.1:8909/api/v1/process/demo
+</code></pre></div>
+<h2 id="list-all-rtsp-connected-cameras">List all RTSP connected cameras<a class="headerlink" href="#list-all-rtsp-connected-cameras" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">curl</label><div class="tabbed-content"></div>
+</div>
+<div class="highlight"><pre><span></span><code>curl http://127.0.0.1:8909/api/v1/processlist
 </code></pre></div>
                 
               
@@ -630,7 +712,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../basic-usage/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../examples/storage-onoff/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -639,25 +721,11 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Basic Usage
-              </div>
-            </div>
-          </a>
-        
-        
-          <a href="../storage-onoff/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  Next
-                </span>
                 Storage
               </div>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-            </div>
           </a>
+        
         
       </nav>
     </div>
