@@ -7,10 +7,10 @@ theme:
     # Default values, taken from mkdocs_theme.yml
   language: en
     # - navigation.instant
-  palette:
-    scheme: chryscloudcolor
-    primary: indigo
-    accent: indigo
+  # palette:
+  #   scheme: chryscloudcolor
+  #   primary: indigo
+  #   accent: indigo
   font:
     text: Roboto
     code: Roboto Mono
