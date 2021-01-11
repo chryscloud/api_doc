@@ -93,4 +93,4 @@ nav:
         - OpenCV Display: edge-proxy/examples/display.md
         - Storage: edge-proxy/examples/storage-onoff.md
     - API References:
-        - REST API: edge-proxy/apis/rest_api.md
+        - REST API: edge-proxy/apis/rest_api_curl.md

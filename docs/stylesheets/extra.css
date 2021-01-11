@@ -1,30 +1,13 @@
-div.col-md-9 h1:first-of-type {
-    text-align: center;
-    font-size: 60px;
-    font-weight: 300;
+:root {
+	--md-primary-fg-color: red;
+	--md-primary-fg-color--dark: red;
+	--md-primary-fg-color--light: red;
 }
 
-div.col-md-9>p:first-of-type {
-    text-align: center;
-}
-
-div.col-md-9 p.admonition-title:first-of-type {
-    text-align: left;
-}
-
-div.col-md-9 h1:first-of-type .headerlink {
-    display: none;
-}
-
-code.no-highlight {
-    color: black;
+.md-header {
+	color: white;
 }
 
 h1 {
-  color: red;
-}
-/* Definition List styles */
-
-dd {
-    padding-left: 20px;
+  	color: red;
 }
