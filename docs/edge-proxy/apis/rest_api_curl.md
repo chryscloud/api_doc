@@ -91,16 +91,44 @@ curl http://127.0.0.1:8909/api/v1/process/{processName}
 | storing | **bool**: if the current process is storing the video stream in the cloud
 | streaming | **bool**: if the current process is proxying the video stream to the cloud
 
+## Start
 
+This command lets you start a RTSP camera process.
+
+=== "curl"
+``` curl
+curl -X POST http://127.0.0.1:8909/api/v1/process/startrtsp
+```
+
+## Stop
+
+This command lets you stop a RTSP camera process.
+
+=== "curl"
+``` curl
+curl -X DELETE http://127.0.0.1:8909/api/v1/process/stop/{processName}
+```
+
+## Info 
+
+This commands fetches information about the RTSP camera process
+
+=== "curl"
+``` curl
+curl -X GET http://127.0.0.1:8909/api/v1/process/info/{processName}
+```
+#### Response Body
+```json
+{Example here}
+```
 
 ## Delete
 
 This command lets you delete a RTSP camera. 
 
 === "curl"
-
 ```curl 
-curl -X DELETE http://127.0.0.1:8909/api/v1/process/demo
+curl -X DELETE http://127.0.0.1:8909/api/v1/process/{processName}
 ```
 ## List
 
@@ -110,3 +138,70 @@ This command lists all the RTSP cameras.
 ``` curl
 curl http://127.0.0.1:8909/api/v1/processlist
 ```
+
+## Find RTSP Upgrades
+
+This command checks if each process has an upgradable version available on local disk
+
+=== "curl"
+
+``` curl 
+curl http://127.0.0.1:8909/api/v1/processupgrades/findrtspupgrades
+```
+
+## UpgradeContainer
+
+This commands lets you upgrade a running container
+
+=== "curl"
+``` curl
+curl -X POST http://127.0.0.1:8909/api/v1/processupgrades/upgradecontainer
+```
+
+
+## Get Settings
+
+This command lets you get settings from the sttings manager
+
+=== "curl"
+``` curl
+curl -X GET http://127.0.0.1:8909/api/v1/settings/
+```
+
+## Overwrite Settings
+
+This commands lets you overwrite setting in the settings manager
+
+=== "curl"
+``` curl
+curl -X POST http://127.0.0.1:8909/api/v1/settings/overwrite/{edgeParams}
+```
+
+#### Path Parameters
+
+| Parameters  | |
+|-------------| -- |
+| edgeParams | **string** The Edge Key and the Edge Secret??!!!
+
+## Docker Pull Image
+
+This command lets you pull the latest docker image
+
+== curl
+``` curl
+curl -X GET http://127.0.0.1:8909/api/v1/settings/dockerpullimage
+```
+
+## Find Docker Images
+
+This command finds images that correspond with the docker image name and returns if its downloaded or maybe if upgraded is needed
+
+== "curl"
+``` curl
+curl -X GET http://127.0.0.1:8909/api/v1/settings/dockerimageslocally/{image_name}
+```
+#### Path Parameters
+
+| Parameters  | |
+|-------------| -- |
+| image_name | **string** The name of the docker image
