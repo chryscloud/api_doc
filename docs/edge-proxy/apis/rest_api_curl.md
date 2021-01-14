@@ -187,7 +187,7 @@ curl -X POST http://127.0.0.1:8909/api/v1/settings/overwrite/{edgeParams}
 
 This command lets you pull the latest docker image
 
-=== curl
+=== "curl"
 ``` curl
 curl -X GET http://127.0.0.1:8909/api/v1/settings/dockerpullimage
 ```
