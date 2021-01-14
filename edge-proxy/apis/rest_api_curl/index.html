@@ -1183,12 +1183,13 @@
 </table>
 <h2 id="docker-pull-image">Docker Pull Image<a class="headerlink" href="#docker-pull-image" title="Permanent link">&para;</a></h2>
 <p>This command lets you pull the latest docker image</p>
-<p>=== curl
+<div class="tabbed-set" data-tabs="12:1"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">curl</label><div class="tabbed-content"></div>
+</div>
 <div class="highlight"><pre><span></span><code>curl -X GET http://127.0.0.1:8909/api/v1/settings/dockerpullimage
-</code></pre></div></p>
+</code></pre></div>
 <h2 id="find-docker-images">Find Docker Images<a class="headerlink" href="#find-docker-images" title="Permanent link">&para;</a></h2>
 <p>This command finds images that correspond with the docker image name and returns if its downloaded or maybe if upgraded is needed</p>
-<div class="tabbed-set" data-tabs="12:1"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><label for="__tabbed_12_1">curl</label><div class="tabbed-content"></div>
+<div class="tabbed-set" data-tabs="13:1"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><label for="__tabbed_13_1">curl</label><div class="tabbed-content"></div>
 </div>
 <div class="highlight"><pre><span></span><code>curl -X GET http://127.0.0.1:8909/api/v1/settings/dockerimageslocally/{image_name}
 </code></pre></div>
