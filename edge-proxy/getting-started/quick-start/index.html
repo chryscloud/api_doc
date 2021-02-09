@@ -862,16 +862,15 @@ chmod 777 install-chrysedge.sh
 <p>Next step: <u><a href="../portal-usage/">Connect RTSP Camera</a></u></p>
 <h2 id="manual-installation">Manual installation<a class="headerlink" href="#manual-installation" title="Permanent link">&para;</a></h2>
 <p>It's recommended to create a folder where your user has sufficient permission. The recommended folder structure is:</p>
-<div class="highlight"><pre><span></span><code>/home/yourusername/chrysedge
+<p><code>/home/yourusername/chrysedge
 |_/data
-|_/videos
-</code></pre></div>
+|_/videos</code>W</p>
 <p>where <code>data</code> and <code>videos</code> are subfolders of <code>chrysedge</code></p>
 <p>Copy and paste below contents into a <code>docker-compose.yml</code> file and save it to <code>/home/yourusername/chrysedge</code>:</p>
 <div class="highlight"><pre><span></span><code>version: &#39;3.8&#39;
 services:
   chrysedgeportal:
-    image: chryscloud/chrysedgeportal:0.0.7.3
+    image: chryscloud/chrysedgeportal:0.0.8
     depends_on:
       - chrysedgeserver
       - redis
@@ -880,7 +879,7 @@ services:
     networks:
       - chrysnet
   chrysedgeserver:
-    image: chryscloud/chrysedgeserver:0.0.7.3
+    image: chryscloud/chrysedgeserver:0.0.8
     restart: always
     depends_on:
       - redis
