@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="0.0.7.3"
+VERSION="0.0.8"
 
 # exit when any command fails
 set -e
@@ -25,7 +25,7 @@ sed -i.bak -e "s|TO_REPLACE_VERSION|$VERSION|g" docker-compose.yml
 docker-compose pull
 
 # pull initial image for faster start
-docker pull chryscloud/chrysedgeproxy:0.0.7.3
+docker pull chryscloud/chrysedgeproxy:0.0.8
 
 echo "Installation successfull"
 

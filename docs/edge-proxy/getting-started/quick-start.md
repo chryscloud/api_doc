@@ -47,7 +47,7 @@ It's recommended to create a folder where your user has sufficient permission. T
 /home/yourusername/chrysedge
 |_/data
 |_/videos
-```
+```W
 
 where `data` and `videos` are subfolders of `chrysedge`
 
@@ -56,7 +56,7 @@ Copy and paste below contents into a `docker-compose.yml` file and save it to `/
 	version: '3.8'
 	services:
 	  chrysedgeportal:
-	    image: chryscloud/chrysedgeportal:0.0.7.3
+	    image: chryscloud/chrysedgeportal:0.0.8
 	    depends_on:
 	      - chrysedgeserver
 	      - redis
@@ -65,7 +65,7 @@ Copy and paste below contents into a `docker-compose.yml` file and save it to `/
 	    networks:
 	      - chrysnet
 	  chrysedgeserver:
-	    image: chryscloud/chrysedgeserver:0.0.7.3
+	    image: chryscloud/chrysedgeserver:0.0.8
 	    restart: always
 	    depends_on:
 	      - redis
