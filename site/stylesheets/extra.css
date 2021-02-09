@@ -1,0 +1,13 @@
+:root {
+	--md-primary-fg-color: #191A43;
+	--md-primary-fg-color--dark: #FF542C;
+	--md-primary-fg-color--light: #FF542C;
+	--md-code-hl-keyword-color: #23C967;
+	--md-accent-fg-color: #23C967;
+}
+
+
+
+h1 {
+  	color: #FF542C;
+}

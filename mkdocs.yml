@@ -79,6 +79,7 @@ nav:
         - Before you begin: edge-proxy/getting-started/prerequisites.md
         - Quick Start: edge-proxy/getting-started/quick-start.md
         - Connect RTSP Camera: edge-proxy/getting-started/portal-usage.md
+        - Connect Other Cameras: edge-proxy/getting-started/other-cams.md
         - Docker Playbook: edge-proxy/getting-started/docker-playbook.md
     - Examples:
         - Prerequisites: edge-proxy/examples/prerequsities.md
@@ -92,6 +93,14 @@ nav:
         - Building from Source: edge-proxy/build-from-source/bfs.md
     - Video API:
         - Overview: edge-proxy/grpc/prerequisites.md
+        - VideoLatestImage: edge-proxy/grpc/video_latest_image.md
+        - VideoProbe: edge-proxy/grpc/video_probe.md
+        - ListStreams: edge-proxy/grpc/list_streams.md
+        - VideoBufferedImage: edge-proxy/grpc/video_buffered_image.md
+        - AI Tags:Annotations: edge-proxy/grpc/annotate.md
+        - Proxy to cloud: edge-proxy/grpc/proxy.md
+        - Remote Storage: edge-proxy/grpc/remote_storage.md
+        - System Time: edge-proxy/grpc/system_time.md
     - REST Process API:
         - REST API: edge-proxy/apis/rest_api_curl.md
 
