@@ -78,7 +78,7 @@ nav:
     - Getting Started:
         - Before you begin: edge-proxy/getting-started/prerequisites.md
         - Quick Start: edge-proxy/getting-started/quick-start.md
-        - Portal Usage: edge-proxy/getting-started/portal-usage.md
+        - Connect RTSP Camera: edge-proxy/getting-started/portal-usage.md
     - Custom configuration:
         - Custom redis configuration: edge-proxy/custom-configuration/redis-config.md
         - Custom Chrysalis configuration: edge-proxy/custom-configuration/chrysalis-config.md

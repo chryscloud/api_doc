@@ -1,4 +1,4 @@
-# Portal Usage
+# Connect your first RTSP Camera
 
 Open your browser and visit : `http://localhost:8905`
 

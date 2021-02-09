@@ -11,20 +11,45 @@ Make sure these ports are available before you start.
 
 ## Download installation script
 
-Windows users can skip to `Docker compose file` and copy paste it in a folder of your choice. 
-
-Installation script simply creates a `docker-compose.yml` file in your prefered folder:
+Windows users should skip `Manual installation`. 
 
 ```
 curl -O https://raw.githubusercontent.com/chryscloud/api_doc/master/install-chrysedge.sh
 
 # Give exec permission
 chmod 777 install-chrysedge.sh
+
+# run installation script
+./install-chrysedge.sh
 ```
 
-## Compose docker file
+## Use Chrys Edge Proxy
 
-Copy and paste below contents into a `docker-compose.yml` file and save it to the folder of your choice, recommended to be different than `/data/chrysalis`:
+Start the docker images:
+
+```python
+docker-compose up
+
+# or to run it in daemon mode:
+
+docker-compose up -d
+```
+
+Open browser and visit: `http://localhost:8905`
+
+## Manual installation
+
+It's recommended to create a folder where your user has sufficient permission. The recommended folder structure is:
+
+```
+/home/yourusername/chrysedge
+|_/data
+|_/videos
+```
+
+where `data` and `videos` are subfolders of `chrysedge`
+
+Copy and paste below contents into a `docker-compose.yml` file and save it to `/home/yourusername/chrysedge`:
 
 	version: '3.8'
 	services:
@@ -47,7 +72,7 @@ Copy and paste below contents into a `docker-compose.yml` file and save it to th
 	      - "8909:8909"
 	      - "50001:50001"
 	    volumes:
-	      - /data/chrysalis:/data/chrysalis
+	      - TO_REPLACE_PATH_TO_USER_FOLDER:/data/chrysalis
 	      - /var/run/docker.sock:/var/run/docker.sock
 	    networks: 
 	      - chrysnet
@@ -62,12 +87,6 @@ Copy and paste below contents into a `docker-compose.yml` file and save it to th
 	  chrysnet:
 	    name: chrysnet
 
-## Start Video Edge AI Proxy
+Change the folder `TO_REPLACE_PATH_TO_USER_FOLDER` with `/home/yourusername/chrysedge`
 
-Run the command:
-
-	docker-compose pull
-	docker-compose up -d --no-build
-
-Open browser and visit `chrysalisportal` at address: `http://localhost:8905`
 
