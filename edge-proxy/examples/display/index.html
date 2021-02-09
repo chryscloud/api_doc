@@ -10,26 +10,26 @@
       
       
       <link rel="shortcut icon" href="../../../assets/favicon-black.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.3">
     
     
       
-        <title>OpenCV Display - Chrysalis</title>
+        <title>Display Video - Chrysalis</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.19753c6b.min.css">
-      
-        
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.196e0c26.min.css">
-        
-      
-    
-    
-    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3b61ea93.min.css">
       
         
-        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.39b8e14a.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
         <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
       
@@ -53,13 +53,14 @@
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
       
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
         
-        <a href="#executing-opencv-display-script" class="md-skip">
+        <a href="#displaying-live-video-stream-with-opencv" class="md-skip">
           Skip to content
         </a>
       
@@ -81,18 +82,20 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
     </label>
     <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
+      <div class="md-header-nav__ellipsis">
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             Chrysalis
           </span>
-          <span class="md-header-nav__topic md-ellipsis">
+        </div>
+        <div class="md-header-nav__topic">
+          <span class="md-ellipsis">
             
-              OpenCV Display
+              Display Video
             
           </span>
         </div>
-      
+      </div>
     </div>
     
       <label class="md-header-nav__button md-icon" for="__search">
@@ -134,17 +137,16 @@
       
         
           
-
-  
-
-<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-tabs__inner md-grid">
     <ul class="md-tabs__list">
       
         
+  
+  
+
+
   <li class="md-tabs__item">
-    
-    
     <a href="../../.." class="md-tabs__link">
       Home
     </a>
@@ -154,24 +156,14 @@
         
   
   
-    <li class="md-tabs__item">
-      
-      
-      <a href="../../../cloud/comingsoon/" class="md-tabs__link">
-        Chrysalis Cloud
-      </a>
-    </li>
+    
   
 
-      
-        
+
+  
   
   
     <li class="md-tabs__item">
-      
-      
-        
-      
       <a href="../../homepage/" class="md-tabs__link md-tabs__link--active">
         Chrysalis Edge
       </a>
@@ -188,12 +180,18 @@
         <div class="md-main__inner md-grid">
           
             
-              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="Chrysalis" class="md-nav__button md-logo" aria-label="Chrysalis">
       
@@ -210,6 +208,7 @@
       
 
 
+
   <li class="md-nav__item">
     <a href="../../.." class="md-nav__link">
       Home
@@ -222,54 +221,21 @@
       
 
 
-  <li class="md-nav__item md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
-    <label class="md-nav__link" for="nav-2">
-      Chrysalis Cloud
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Chrysalis Cloud" data-md-level="1">
-      <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon"></span>
-        Chrysalis Cloud
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../cloud/comingsoon/" class="md-nav__link">
-      Coming Soon
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
+  
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-    <label class="md-nav__link" for="nav-3">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
       Chrysalis Edge
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Chrysalis Edge" data-md-level="1">
-      <label class="md-nav__title" for="nav-3">
+      <label class="md-nav__title" for="nav-2">
         <span class="md-nav__icon md-icon"></span>
         Chrysalis Edge
       </label>
@@ -281,9 +247,10 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../homepage/" class="md-nav__link">
-      Home
+      About
     </a>
   </li>
 
@@ -293,27 +260,19 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../../features/" class="md-nav__link">
-      Features
-    </a>
-  </li>
 
-        
-          
-          
-          
-
-
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3" >
-    <label class="md-nav__link" for="nav-3-3">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2" >
+    
+    <label class="md-nav__link" for="nav-2-2">
       Getting Started
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Getting Started" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-3">
+      <label class="md-nav__title" for="nav-2-2">
         <span class="md-nav__icon md-icon"></span>
         Getting Started
       </label>
@@ -325,9 +284,10 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../getting-started/prerequisites/" class="md-nav__link">
-      Prerequisites
+      Before you begin
     </a>
   </li>
 
@@ -335,6 +295,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -349,9 +310,23 @@
           
 
 
+
   <li class="md-nav__item">
     <a href="../../getting-started/portal-usage/" class="md-nav__link">
-      Portal Usage
+      Connect RTSP Camera
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../../getting-started/docker-playbook/" class="md-nav__link">
+      Docker Playbook
     </a>
   </li>
 
@@ -366,15 +341,140 @@
           
 
 
+  
+
+
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3" checked>
+    
+    <label class="md-nav__link" for="nav-2-3">
+      Examples
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Examples" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
+        Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../prerequsities/" class="md-nav__link">
+      Prerequisites
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../basic-usage/" class="md-nav__link">
+      List Cameras
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Display Video
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Display Video
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-walkthrough" class="md-nav__link">
+    Code walkthrough
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="../probe/" class="md-nav__link">
+      Video Probe
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4" >
-    <label class="md-nav__link" for="nav-3-4">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" >
+    
+    <label class="md-nav__link" for="nav-2-4">
       Custom configuration
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Custom configuration" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-4">
+      <label class="md-nav__title" for="nav-2-4">
         <span class="md-nav__icon md-icon"></span>
         Custom configuration
       </label>
@@ -386,9 +486,10 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../../custom-configuration/redis-config/" class="md-nav__link">
-      Custom redis configuration
+    <a href="../../custom-configuration/chrysalis-config/" class="md-nav__link">
+      Custom Chrysalis configuration
     </a>
   </li>
 
@@ -398,9 +499,10 @@
           
 
 
+
   <li class="md-nav__item">
-    <a href="../../custom-configuration/chrysalis-config/" class="md-nav__link">
-      Custom Chrysalis configuration
+    <a href="../../custom-configuration/redis-config/" class="md-nav__link">
+      Custom redis configuration
     </a>
   </li>
 
@@ -415,15 +517,19 @@
           
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-5" type="checkbox" id="nav-3-5" >
-    <label class="md-nav__link" for="nav-3-5">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5" >
+    
+    <label class="md-nav__link" for="nav-2-5">
       Building from Source
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Building from Source" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-5">
+      <label class="md-nav__title" for="nav-2-5">
         <span class="md-nav__icon md-icon"></span>
         Building from Source
       </label>
@@ -433,6 +539,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -451,20 +558,22 @@
           
           
 
+
+
   
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-6" type="checkbox" id="nav-3-6" checked>
-    <label class="md-nav__link" for="nav-3-6">
-      Examples
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6" >
+    
+    <label class="md-nav__link" for="nav-2-6">
+      Video API
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Examples" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-6">
+    <nav class="md-nav" aria-label="Video API" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
         <span class="md-nav__icon md-icon"></span>
-        Examples
+        Video API
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -474,54 +583,10 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../prerequisites/" class="md-nav__link">
-      Prerequisites
-    </a>
-  </li>
-
-        
-          
-          
-          
-
 
   <li class="md-nav__item">
-    <a href="../basic-usage/" class="md-nav__link">
-      Basic Usage
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      OpenCV Display
-    </a>
-    
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../storage-onoff/" class="md-nav__link">
-      Storage
+    <a href="../../grpc/prerequisites/" class="md-nav__link">
+      Overview
     </a>
   </li>
 
@@ -536,17 +601,21 @@
           
 
 
+
+  
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-7" type="checkbox" id="nav-3-7" >
-    <label class="md-nav__link" for="nav-3-7">
-      API References
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7" >
+    
+    <label class="md-nav__link" for="nav-2-7">
+      REST Process API
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="API References" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-7">
+    <nav class="md-nav" aria-label="REST Process API" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
         <span class="md-nav__icon md-icon"></span>
-        API References
+        REST Process API
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -554,6 +623,7 @@
           
           
           
+
 
 
   <li class="md-nav__item">
@@ -580,7 +650,8 @@
               </div>
             
             
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -589,6 +660,21 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-walkthrough" class="md-nav__link">
+    Code walkthrough
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -601,12 +687,126 @@
               
                 
                 
-                <h1 id="executing-opencv-display-script">Executing OpenCV display script<a class="headerlink" href="#executing-opencv-display-script" title="Permanent link">&para;</a></h1>
+                <h1 id="displaying-live-video-stream-with-opencv">Displaying live video stream with OpenCV<a class="headerlink" href="#displaying-live-video-stream-with-opencv" title="Permanent link">&para;</a></h1>
+<p>Example demonstrated displaying a live video stream and probing in memory buffer if it exists.</p>
+<p><code>opencv_display.py:</code>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">grpc</span>
+<span class="kn">import</span> <span class="nn">video_streaming_pb2_grpc</span><span class="o">,</span> <span class="nn">video_streaming_pb2</span>
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">cv2</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">os</span>
+
+<span class="k">def</span> <span class="nf">gen_buffer_probe_request</span><span class="p">(</span><span class="n">device_name</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Create GRPC request to get in memory probe info &quot;&quot;&quot;</span>
+
+    <span class="n">req</span> <span class="o">=</span> <span class="n">video_streaming_pb2</span><span class="o">.</span><span class="n">VideoProbeRequest</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">device_id</span> <span class="o">=</span> <span class="n">device_name</span>
+
+    <span class="k">return</span> <span class="n">req</span>
+
+<span class="k">def</span> <span class="nf">gen_image_request</span><span class="p">(</span><span class="n">device_name</span><span class="p">,</span> <span class="n">keyframe_only</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Create an object to request a video frame &quot;&quot;&quot;</span>
+
+
+    <span class="n">req</span> <span class="o">=</span> <span class="n">video_streaming_pb2</span><span class="o">.</span><span class="n">VideoFrameRequest</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">device_id</span> <span class="o">=</span> <span class="n">device_name</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">key_frame_only</span> <span class="o">=</span> <span class="n">keyframe_only</span>
+    <span class="k">return</span> <span class="n">req</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span><span class="n">description</span><span class="o">=</span><span class="s1">&#39;Chrysalis Edge Proxy Basic Example&#39;</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--device&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">required</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--keyframe&quot;</span><span class="p">,</span> <span class="n">action</span><span class="o">=</span><span class="s1">&#39;store_true&#39;</span><span class="p">)</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_args</span><span class="p">()</span>
+
+    <span class="c1"># grpc connection to video-edge-ai-proxy</span>
+    <span class="c1"># we also increase the limit of decoded frames (up to 50 MB for super high definition videos)</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;grpc.max_receive_message_length&#39;</span><span class="p">,</span> <span class="mi">50</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">)]</span>
+    <span class="n">channel</span> <span class="o">=</span> <span class="n">grpc</span><span class="o">.</span><span class="n">insecure_channel</span><span class="p">(</span><span class="s1">&#39;127.0.0.1:50001&#39;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">stub</span> <span class="o">=</span> <span class="n">video_streaming_pb2_grpc</span><span class="o">.</span><span class="n">ImageStub</span><span class="p">(</span><span class="n">channel</span><span class="p">)</span>
+
+    <span class="c1"># displaying video info (if exists)</span>
+    <span class="n">probe</span> <span class="o">=</span> <span class="n">stub</span><span class="o">.</span><span class="n">VideoProbe</span><span class="p">(</span><span class="n">gen_buffer_probe_request</span><span class="p">(</span><span class="n">device_name</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">device</span><span class="p">))</span>
+    <span class="n">aproxFps</span> <span class="o">=</span> <span class="mi">30</span> <span class="c1"># just a guess</span>
+    <span class="k">if</span> <span class="n">probe</span><span class="o">.</span><span class="n">buffer</span><span class="p">:</span>
+        <span class="n">aproxFps</span> <span class="o">=</span> <span class="n">probe</span><span class="o">.</span><span class="n">buffer</span><span class="o">.</span><span class="n">approximate_fps</span>
+
+    <span class="nb">print</span><span class="p">(</span><span class="n">probe</span><span class="p">)</span>
+
+    <span class="c1"># requesting video frames</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">gen_image_request</span><span class="p">(</span><span class="n">device_name</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">device</span><span class="p">,</span><span class="n">keyframe_only</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">keyframe</span><span class="p">)</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">frame</span> <span class="o">=</span> <span class="n">stub</span><span class="o">.</span><span class="n">VideoLatestImage</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+        <span class="c1"># it&#39;s good to check if empty frame returned</span>
+        <span class="k">if</span> <span class="n">frame</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># read raw frame data and convert to numpy array</span>
+            <span class="n">img_bytes</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">data</span> 
+            <span class="n">re_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">img_bytes</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+
+            <span class="c1"># reshape image back into original dimensions</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">shape</span><span class="o">.</span><span class="n">dim</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="n">reshape</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="nb">int</span><span class="p">(</span><span class="n">dim</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="n">frame</span><span class="o">.</span><span class="n">shape</span><span class="o">.</span><span class="n">dim</span><span class="p">])</span>
+                <span class="n">re_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">re_img</span><span class="p">,</span> <span class="n">reshape</span><span class="p">)</span>
+
+                <span class="c1"># # display image</span>
+                <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;box&#39;</span><span class="p">,</span> <span class="n">re_img</span><span class="p">)</span>
+
+                <span class="k">if</span> <span class="n">cv2</span><span class="o">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mh">0xFF</span> <span class="o">==</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">&#39;q&#39;</span><span class="p">):</span>
+                    <span class="k">break</span>
+
+        <span class="c1"># delay by assumed fps rate</span>
+        <span class="n">delay</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">aproxFps</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">delay</span><span class="p">)</span>
+</code></pre></div></p>
 <p>Display video at original frame rate for <code>test</code> camera:</p>
 <div class="highlight"><pre><span></span><code>python opencv_display.py --device test
 </code></pre></div>
 <p>Display only Keyframes for <code>test</code> camera:</p>
 <div class="highlight"><pre><span></span><code>python opencv_display.py --device test --keyframe
+</code></pre></div>
+<h2 id="code-walkthrough">Code walkthrough<a class="headerlink" href="#code-walkthrough" title="Permanent link">&para;</a></h2>
+<p>We establish a gRPC connection to Chryslis Edge Proxy which by default runs on :50001 port of locahost:</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># grpc connection to video-edge-ai-proxy</span>
+    <span class="c1"># we also increase the limit of decoded frames (up to 50 MB for super high definition videos)</span>
+    <span class="n">options</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">&#39;grpc.max_receive_message_length&#39;</span><span class="p">,</span> <span class="mi">50</span> <span class="o">*</span> <span class="mi">1024</span> <span class="o">*</span> <span class="mi">1024</span><span class="p">)]</span>
+    <span class="n">channel</span> <span class="o">=</span> <span class="n">grpc</span><span class="o">.</span><span class="n">insecure_channel</span><span class="p">(</span><span class="s1">&#39;127.0.0.1:50001&#39;</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">stub</span> <span class="o">=</span> <span class="n">video_streaming_pb2_grpc</span><span class="o">.</span><span class="n">ImageStub</span><span class="p">(</span><span class="n">channel</span><span class="p">)</span>
+</code></pre></div>
+<p>Once we've established the connection we need to create a frame request to be sent to server:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">gen_image_request</span><span class="p">(</span><span class="n">device_name</span><span class="p">,</span> <span class="n">keyframe_only</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Create an object to request a video frame &quot;&quot;&quot;</span>
+
+
+    <span class="n">req</span> <span class="o">=</span> <span class="n">video_streaming_pb2</span><span class="o">.</span><span class="n">VideoFrameRequest</span><span class="p">()</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">device_id</span> <span class="o">=</span> <span class="n">device_name</span>
+    <span class="n">req</span><span class="o">.</span><span class="n">key_frame_only</span> <span class="o">=</span> <span class="n">keyframe_only</span>
+    <span class="k">return</span> <span class="n">req</span>
+</code></pre></div>
+<p>Function accepts 2 parameters (device_name, sometimes referred to as device_id or camera name) and keyframe_only<Bool> requesting only keyframes when True.</p>
+<p>In perpetual loop we request video frames for desired camera. It's a simple request, response Unary RPC call.</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># requesting video frames</span>
+    <span class="n">req</span> <span class="o">=</span> <span class="n">gen_image_request</span><span class="p">(</span><span class="n">device_name</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">device</span><span class="p">,</span><span class="n">keyframe_only</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">keyframe</span><span class="p">)</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">frame</span> <span class="o">=</span> <span class="n">stub</span><span class="o">.</span><span class="n">VideoLatestImage</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+        <span class="c1"># it&#39;s good to check if empty frame returned</span>
+        <span class="k">if</span> <span class="n">frame</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="c1"># read raw frame data and convert to numpy array</span>
+            <span class="n">img_bytes</span> <span class="o">=</span> <span class="n">frame</span><span class="o">.</span><span class="n">data</span> 
+            <span class="n">re_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">frombuffer</span><span class="p">(</span><span class="n">img_bytes</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">)</span>
+</code></pre></div>
+<p>Returned frame from <code>VideoLatestImage</code> contains a <code>data</code> attribute. That's where our image is stored as <code>BGR24</code> file. Since the data is stored as one dimensional byte buffer we need to convert the image into numpy array. </p>
+<p>After we converted the image into numpy array is easy to reshape that array into a decoded frame dimensions: </p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># reshape image back into original dimensions</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">frame</span><span class="o">.</span><span class="n">shape</span><span class="o">.</span><span class="n">dim</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">reshape</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">([</span><span class="nb">int</span><span class="p">(</span><span class="n">dim</span><span class="o">.</span><span class="n">size</span><span class="p">)</span> <span class="k">for</span> <span class="n">dim</span> <span class="ow">in</span> <span class="n">frame</span><span class="o">.</span><span class="n">shape</span><span class="o">.</span><span class="n">dim</span><span class="p">])</span>
+        <span class="n">re_img</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">re_img</span><span class="p">,</span> <span class="n">reshape</span><span class="p">)</span>
+</code></pre></div>
+<p>We end up with BGR24 image ready to be fed into any ML model or displayed with OpenCV as in our case:</p>
+<div class="highlight"><pre><span></span><code>    <span class="c1"># display image</span>
+    <span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s1">&#39;box&#39;</span><span class="p">,</span> <span class="n">re_img</span><span class="p">)</span>
 </code></pre></div>
                 
               
@@ -635,19 +835,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Basic Usage
+                List Cameras
               </div>
             </div>
           </a>
         
         
-          <a href="../storage-onoff/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../probe/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Storage
+                Video Probe
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -705,15 +905,15 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.0ac82a11.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.f81dfb4d.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.08c56446.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.6ced434e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: ['navigation.tabs'],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../assets/javascripts/worker/search.8c7e0a7e.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
