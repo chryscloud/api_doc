@@ -16,7 +16,7 @@ Windows users can skip to `Docker compose file` and copy paste it in a folder of
 Installation script simply creates a `docker-compose.yml` file in your prefered folder:
 
 ```
-curl -O 
+curl -O https://raw.githubusercontent.com/chryscloud/api_doc/master/install-chrysedge.sh
 
 # Give exec permission
 chmod 777 install-chrysedge.sh

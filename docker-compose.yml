@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   chrysedgeportal:
-    image: chryscloud/chrysedgeportal:0.0.7.3
+    image: chryscloud/chrysedgeportal:TO_REPLACE_VERSION
     depends_on:
       - chrysedgeserver
       - redis
@@ -10,7 +10,7 @@ services:
     networks:
       - chrysnet
   chrysedgeserver:
-    image: chryscloud/chrysedgeserver:0.0.7.3
+    image: chryscloud/chrysedgeserver:TO_REPLACE_VERSION
     restart: always
     depends_on:
       - redis
