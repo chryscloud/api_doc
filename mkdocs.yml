@@ -73,13 +73,10 @@ markdown_extensions:
 # Page tree
 nav:
   - Home: index.md
-  - Chrysalis Cloud:
-    - Coming Soon: cloud/comingsoon.md
   - Chrysalis Edge:
-    - Home: edge-proxy/homepage.md
-    - Features: edge-proxy/features.md
+    - About: edge-proxy/homepage.md
     - Getting Started:
-        - Prerequisites: edge-proxy/getting-started/prerequisites.md
+        - Before you begin: edge-proxy/getting-started/prerequisites.md
         - Quick Start: edge-proxy/getting-started/quick-start.md
         - Portal Usage: edge-proxy/getting-started/portal-usage.md
     - Custom configuration:

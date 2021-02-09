@@ -9,15 +9,18 @@ By default video-edge-ai-proxy requires these ports:
 
 Make sure these ports are available before you start.
 
-## Setup directory
+## Download installation script
 
-Create a directory under `chrysedgeserver` -> `volumes`:
+Windows users can skip to `Docker compose file` and copy paste it in a folder of your choice. 
 
-=== "Linux"
-	```/data/chrysalis```
+Installation script simply creates a `docker-compose.yml` file in your prefered folder:
 
-=== "Mac OS X and Windows"
-	```/Users/usename/data```
+```
+curl -O 
+
+# Give exec permission
+chmod 777 install-chrysedge.sh
+```
 
 ## Compose docker file
 
@@ -26,7 +29,7 @@ Copy and paste below contents into a `docker-compose.yml` file and save it to th
 	version: '3.8'
 	services:
 	  chrysedgeportal:
-	    image: chryscloud/chrysedgeportal:0.0.6
+	    image: chryscloud/chrysedgeportal:0.0.7.3
 	    depends_on:
 	      - chrysedgeserver
 	      - redis
@@ -35,7 +38,7 @@ Copy and paste below contents into a `docker-compose.yml` file and save it to th
 	    networks:
 	      - chrysnet
 	  chrysedgeserver:
-	    image: chryscloud/chrysedgeserver:0.0.6
+	    image: chryscloud/chrysedgeserver:0.0.7.3
 	    restart: always
 	    depends_on:
 	      - redis
