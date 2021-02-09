@@ -79,15 +79,23 @@ nav:
         - Before you begin: edge-proxy/getting-started/prerequisites.md
         - Quick Start: edge-proxy/getting-started/quick-start.md
         - Connect RTSP Camera: edge-proxy/getting-started/portal-usage.md
+        - Docker Playbook: edge-proxy/getting-started/docker-playbook.md
+    - Examples:
+        - Prerequisites: edge-proxy/examples/prerequsities.md
+        - List Cameras: edge-proxy/examples/basic-usage.md
+        - Display Video: edge-proxy/examples/display.md
+        - Video Probe: edge-proxy/examples/probe.md
     - Custom configuration:
-        - Custom redis configuration: edge-proxy/custom-configuration/redis-config.md
         - Custom Chrysalis configuration: edge-proxy/custom-configuration/chrysalis-config.md
+        - Custom redis configuration: edge-proxy/custom-configuration/redis-config.md
     - Building from Source: 
         - Building from Source: edge-proxy/build-from-source/bfs.md
-    - Examples:
-        - Prerequisites: edge-proxy/examples/prerequisites.md
-        - Basic Usage: edge-proxy/examples/basic-usage.md
-        - OpenCV Display: edge-proxy/examples/display.md
-        - Storage: edge-proxy/examples/storage-onoff.md
-    - API References:
+    - Video API:
+        - Overview: edge-proxy/grpc/prerequisites.md
+    - REST Process API:
         - REST API: edge-proxy/apis/rest_api_curl.md
+
+
+        # - Python Examples: edge-proxy/examples/python-examples.md
+        # - OpenCV Display: edge-proxy/examples/display.md
+        # - Storage: edge-proxy/examples/storage-onoff.md

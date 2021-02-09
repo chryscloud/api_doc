@@ -6,23 +6,26 @@ On the first visit, Edge Proxy will display a RTSP docker container icon. Click 
 
 ## Connecting RTSP camera
 
-* Click: Connect RTSP Camera in the Chrysalis portal and name the camera
-* Insert full RTSP link and if credentials are required add them to the link
+![ConnectRTSP](https://storage.googleapis.com/chrysaliswebassets/docs/images/add_rtsp_cam.png)
+{: loading=lazy }
 
-## Example RTSP url 
+- Name of the RTSP camera must be all ASCII letters
+- Add your IP camera URL
 
-=== "With credentials"
+=== "Example With credentials"
 	```rtsp://admin:12345@192.168.1.21/Streaming/Channels/101```
 
-=== "Without credentials"
+=== "Example Without credentials"
 	```rtsp://192.168.1.21:8554/unicast```
 
-Click on the newly created connection and check the output and error log. Expected state is running and the output message `Started python rtsp process...`
+- Click Add
 
 ## Chrysalis Portal 
 
+You should see a similar image as bellow. The left black box is a log. Currently you need to manually refresh the website in order to see the log changes. 
+
+The black box on the right is the error log. If there are no error logs the camera is succesfully connected.
+
 ![Placeholder](https://camo.githubusercontent.com/25ecc01724287922eeee76e2904575f7d1afc102cc99fe225315b9da7118aab4/68747470733a2f2f73746f726167652e676f6f676c65617069732e636f6d2f6368727973616c69737765626173736574732f63687279735f656467655f70726f78795f746573745f63616d2e706e67){: loading=lazy }
 
-## Client Usage
-
-At this point you should have the video-edge-ai-proxy up and running and your first connection to RTSP camera established.
+Next step <u>[Video API](../examples/prerequisites.md)</u>

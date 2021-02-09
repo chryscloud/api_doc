@@ -11,8 +11,6 @@ Make sure these ports are available before you start.
 
 ## Download installation script
 
-Windows users should skip `Manual installation`. 
-
 ```
 curl -O https://raw.githubusercontent.com/chryscloud/api_doc/master/install-chrysedge.sh
 
@@ -22,6 +20,8 @@ chmod 777 install-chrysedge.sh
 # run installation script
 ./install-chrysedge.sh
 ```
+
+Windows users should skip to `Manual installation`. 
 
 ## Use Chrys Edge Proxy
 
@@ -36,6 +36,8 @@ docker-compose up -d
 ```
 
 Open browser and visit: `http://localhost:8905`
+
+Next step: <u>[Connect RTSP Camera](portal-usage.md)</u>
 
 ## Manual installation
 
